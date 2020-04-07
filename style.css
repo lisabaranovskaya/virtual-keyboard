@@ -1,0 +1,116 @@
+html {
+    font-size: 10px;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper .textarea {
+    display: block;
+    width: 900px;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: rgb(24, 20, 20);
+}
+
+.keyboard {
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.keyboard .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 8px;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    margin-right: 7px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #523138;
+    background-color: #f0d1f0;
+    border: 1px solid rgb(71, 68, 68);
+    border-radius: 10%;
+    cursor: pointer;
+    transition: top 1s ease-out 0.5s;
+}
+
+.keyboard .backspace, .keyboard .capslock, .keyboard .shift-right, .keyboard .enter {
+    width: 87px;
+}
+
+.keyboard .shift-left {
+    width: 100px;
+}
+
+.keyboard .alt-left, .keyboard .alt-right, .keyboard .arrow, .keyboard .backspace, .keyboard .capslock, .keyboard .ctrl-left, .keyboard .ctrl-right, .keyboard .del, .keyboard .enter, .keyboard .shift-left, .keyboard .shift-right, .keyboard .tab, .keyboard .win {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #141413;
+    background-color: #aca5aa;
+}
+
+.keyboard .arrow {
+    font-size: 2rem;
+}
+
+
+.off, .case-hidden {
+    display: none;
+}
+
+.key.active {
+    background-color: rgb(151, 128, 125);
+    transform: translateY(0.5px);
+}
+
+
+.key:active {
+    background-color: rgb(151, 128, 125);
+    transform: translateY(0.5px);
+}
+
+.key:hover {
+    cursor: pointer;
+    background-color: rgb(151, 128, 125);
+}
+
+button {
+    background-color: rgb(151, 128, 125);
+    border: 1px solid rgb(71, 70, 70);
+    border-radius: 5px;
+    color: #161615;
+    padding: 1%;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+@keyframes push {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(1px);
+    }
+
+    75% {
+        transform: translateY(0px);
+    }
+}
